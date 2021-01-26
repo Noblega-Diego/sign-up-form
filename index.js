@@ -57,16 +57,16 @@ changeInput(inputBoxLastName,'lastName',(value) =>{
         info:''
     }
     if(usernameRegex.test(value)){
-        stateForm.name = true;
+        stateForm.lastName = true;
     }else{
         if(value.length == '') {
             state.info = 'email cannot be empty';
         }else if(value.length < 3) {
             state.info = 'name must contain more than two characters';
         }
-        stateForm.name = false;
+        stateForm.lastName = false;
     }
-    state.value = stateForm.name;
+    state.value = stateForm.lastName;
     return state;
 });
 
@@ -76,14 +76,14 @@ changeInput(inputBoxEmail,'email',(value) =>{
         info:''
     }
     if(emailRegex.test(value)){
-        stateForm.name = true;
+        stateForm.email = true;
     }else{
         console.log(value.length);
         if(value.length == '') state.info = 'email cannot be empty';
         else state.info = 'Looks like this is not on email';
         stateForm.name = false;
     }
-    state.value = stateForm.name;
+    state.value = stateForm.email;
     return state;
 });
 
@@ -93,13 +93,13 @@ changeInput(inputBoxPassword,'password',(value) =>{
         info:''
     }
     if(passwordRegex.test(value)){
-        stateForm.name = true;
+        stateForm.password = true;
     }else{
         if(value.length == '') state.info = 'password cannot be empty';
         else state.info = 'the password must have capital letters and numbers';
-        stateForm.name = false;
+        stateForm.password = false;
     }
-    state.value = stateForm.name;
+    state.value = stateForm.password;
     return state;
 });
 
@@ -110,6 +110,7 @@ form.addEventListener('submit',(e)=>{
     if(!stateForm.name || !stateForm.lastName || !stateForm.email || !stateForm.password){
         menssage.classList.add('message--error');
         menssage.querySelector('p').textContent = 'the fields are incorrect';
+        console.log(stateForm);
     }else{
         //correct inputs
         menssage.classList.remove('message--error');
