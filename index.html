@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="main">
+      <!-- <img class="image-background" srcset="assets/images/bg-intro-desktop.png, assets/images/bg-intro-mobile.png x2"> -->
+      <section class="section section-info">
+        <h1 class="section__title">Learn to code by watching others</h1>
+        <p class="section__p">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="section section-form">
+        <div class="content content-info content-background">
+          <p><span class="bold">Try it free 7 days</span> than $20/mo. thereafter</p>
+        </div>
+        <div class="content content-form content-background">
+          <form class="form" id="form">
+            <section class="inputBox" id="BoxInput-name">
+              <div class="inputBox__content">
+                <input type="text" name="name" id="name" class="inputBox__input" placeholder="Name" autofocus/>
+                <svg  class="inputBox__svg inputBox__svg--none"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              </div>
+              <p class="inputBox__info"></p>
+            </section>
+            <section class="inputBox" id="BoxInput-lastName">
+              <div class="inputBox__content">
+                <input type="text" name="lastName" id="lastName" class="inputBox__input"  placeholder="Last Name"/>
+                <svg  class="inputBox__svg inputBox__svg--none"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              </div>
+              <p class="inputBox__info"></p>
+            </section>
+            <section class="inputBox" id="BoxInput-email">
+              <div class="inputBox__content">
+                <input type="email" name="email" id="email" class="inputBox__input" placeholder="Email" autocomplete="email"/>
+                <svg  class="inputBox__svg inputBox__svg--none"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              </div>
+              <p class="inputBox__info"></p>
+            </section>
+            <section class="inputBox" id="BoxInput-password">
+              <div class="inputBox__content">
+                <input type="password" name="password" id="password" class="inputBox__input" placeholder="Password" autocomplete="new-password"/>
+                <svg  class="inputBox__svg inputBox__svg--none"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              </div>
+              <p class="inputBox__info"></p>
+            </section>
+            <section>
+              <button class="form__button uppercase" id="form-button">claim your free trial</button>
+              <div class="message" id="message">
+                <p></p>
+              </div>
+            </section>
+            <p class="form__text-service">
+              By cliking the button, you are agreeing to our
+              <a href="#" class="form__text-link">Terms and Services</a>
+            </p>
+          </form>
+          
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
